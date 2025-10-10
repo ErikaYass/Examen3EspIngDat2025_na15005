@@ -2,13 +2,28 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>parcial3_na15005</Name>
-    <LastWriteTime>2025-10-10T03:24:29.1566701Z</LastWriteTime>
+    <LastWriteTime>2025-10-10T03:35:08.1088655Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2025-10-10T03:37:21.1861932Z</LastWriteTime>
+      <Name>Llenado Base Origen.dtsx</Name>
+      <LastWriteTime>2025-10-10T03:46:32.4506353Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>FactFlight.dtsx</Name>
+      <LastWriteTime>2025-10-10T03:25:34.0406508Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>DimAerolinea.dtsx</Name>
+      <LastWriteTime>2025-10-10T03:30:41.5158877Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ETLPrincipal.dtsx</Name>
+      <LastWriteTime>2025-10-10T03:33:38.0427584Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
