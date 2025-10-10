@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="10/9/2025 7:53:39 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="22538"
   DTS:ObjectName="FactFlight"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{1931B482-9AB3-4BC7-B01C-2C34807EA244}">
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{753A009C-53B1-4DDB-9D09-6485A237A13C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,11 +29,11 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.GamatronFlightDataCsv]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{1EE85467-DE81-45C7-9F10-47C0BEC24A14}"
+      DTS:DTSID="{03ECE385-A881-428B-97D5-A680CEE8522A}"
       DTS:ObjectName="(localdb)\MSSQLLocalDB.GamatronFlightDataCsv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=GamatronFlightDataCsv;Integrated Security=True;Application Name=SSIS-FTFlight-{1EE85467-DE81-45C7-9F10-47C0BEC24A14}(localdb)\MSSQLLocalDB.GamatronFlightDataCsv;" />
+          DTS:ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=GamatronFlightDataCsv;Integrated Security=True;Application Name=SSIS-FactFlight-{03ECE385-A881-428B-97D5-A680CEE8522A}(localdb)\MSSQLLocalDB.GamatronFlightDataCsv;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -92,12 +92,13 @@
                   synchronousInputId="Package\Tarea Flujo de datos\Conversión de datos.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Aerolinea]"
-                      dataType="nText"
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[AerolineaCorrecto]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Aerolinea]"
-                      name="Aerolinea"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[AerolineaCorrecto]"
+                      name="AerolineaCorrecto"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -112,12 +113,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Origen]"
-                      dataType="nText"
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[OrigenCorrecto]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Origen]"
-                      name="Origen"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[OrigenCorrecto]"
+                      name="OrigenCorrecto"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -132,12 +134,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Destino]"
-                      dataType="nText"
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DestinoCorrecto]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Destino]"
-                      name="Destino"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DestinoCorrecto]"
+                      name="DestinoCorrecto"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -191,20 +194,11 @@
                   name="Entrada de conversión de datos">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Conversión de datos 1.Inputs[Entrada de conversión de datos].Columns[Aerolinea]"
-                      cachedDataType="nText"
-                      cachedName="Aerolinea"
-                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Aerolinea]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Conversión de datos 1.Inputs[Entrada de conversión de datos].Columns[Origen]"
-                      cachedDataType="nText"
-                      cachedName="Origen"
-                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Origen]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Conversión de datos 1.Inputs[Entrada de conversión de datos].Columns[Destino]"
-                      cachedDataType="nText"
-                      cachedName="Destino"
-                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Destino]" />
+                      refId="Package\Tarea Flujo de datos\Conversión de datos 1.Inputs[Entrada de conversión de datos].Columns[AerolineaCorrecto]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="AerolineaCorrecto"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[AerolineaCorrecto]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -217,59 +211,21 @@
                   synchronousInputId="Package\Tarea Flujo de datos\Conversión de datos 1.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Conversión de datos 1.Outputs[Salida de conversión de datos].Columns[Copy of Origen de ADO NET.Aerolinea]"
-                      dataType="nText"
+                      refId="Package\Tarea Flujo de datos\Conversión de datos 1.Outputs[Salida de conversión de datos].Columns[AerolineaDefinitivo]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Tarea Flujo de datos\Conversión de datos 1.Outputs[Salida de conversión de datos].Columns[Copy of Origen de ADO NET.Aerolinea]"
-                      name="Copy of Origen de ADO NET.Aerolinea"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos 1.Outputs[Salida de conversión de datos].Columns[AerolineaDefinitivo]"
+                      name="AerolineaDefinitivo"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Aerolinea]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Conversión de datos 1.Outputs[Salida de conversión de datos].Columns[Copy of Origen de ADO NET.Origen]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Tarea Flujo de datos\Conversión de datos 1.Outputs[Salida de conversión de datos].Columns[Copy of Origen de ADO NET.Origen]"
-                      name="Copy of Origen de ADO NET.Origen"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Origen]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Conversión de datos 1.Outputs[Salida de conversión de datos].Columns[Copy of Origen de ADO NET.Destino]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Tarea Flujo de datos\Conversión de datos 1.Outputs[Salida de conversión de datos].Columns[Copy of Origen de ADO NET.Destino]"
-                      name="Copy of Origen de ADO NET.Destino"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Destino]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[AerolineaCorrecto]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -479,23 +435,26 @@
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[MinutosRetrasoTardioAviones]"
                       lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[MinutosRetrasoTardioAviones]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Origen]"
-                      cachedDataType="nText"
-                      cachedName="Origen"
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[OrigenCorrecto]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="OrigenCorrecto"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Origen]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Origen]" />
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[OrigenCorrecto]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Destino]"
-                      cachedDataType="nText"
-                      cachedName="Destino"
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DestinoCorrecto]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="DestinoCorrecto"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Destino]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Destino]" />
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DestinoCorrecto]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Aerolinea]"
-                      cachedDataType="nText"
-                      cachedName="Aerolinea"
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[AerolineaCorrecto]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="AerolineaCorrecto"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[AerolineaKey]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Aerolinea]" />
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[AerolineaCorrecto]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Fecha]"
                       cachedDataType="dbTimeStamp"
@@ -1256,29 +1215,63 @@ try_cast(SecurityDelay as float)&gt;0.00 or try_cast(LateAircraftDelay as float)
         <NodeLayout
           Size="183,42"
           Id="Package\Tarea Flujo de datos\Destino de ADO NET"
-          TopLeft="412,142" />
+          TopLeft="411,142" />
         <NodeLayout
           Size="180,42"
           Id="Package\Tarea Flujo de datos\Conversión de datos"
-          TopLeft="403,28" />
+          TopLeft="403,27" />
         <NodeLayout
           Size="179,42"
           Id="Package\Tarea Flujo de datos\Origen de ADO NET"
-          TopLeft="71,30" />
+          TopLeft="67,30" />
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET]"
-          TopLeft="250,50">
+          TopLeft="246,49.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="153,0"
+              EndConnector="157,0"
               Start="0,0"
-              End="145.5,0">
+              End="149.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="145.5,0" />
+                    End="149.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos]"
+          TopLeft="493,69">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-317.5,83"
+              Start="0,0"
+              End="-317.5,75.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.5"
+                    Point2="0,41.5"
+                    Point3="-4,41.5" />
+                  <mssgle:LineSegment
+                    End="-313.5,41.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-313.5,41.5"
+                    Point2="-317.5,41.5"
+                    Point3="-317.5,45.5" />
+                  <mssgle:LineSegment
+                    End="-317.5,75.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1293,60 +1286,26 @@ try_cast(SecurityDelay as float)&gt;0.00 or try_cast(LateAircraftDelay as float)
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="142,-10"
+              EndConnector="141,-10"
               Start="0,0"
-              End="134.5,-10">
+              End="133.5,-10">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="67,0" />
+                    End="66.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="67,0"
-                    Point2="71,0"
-                    Point3="71,-4" />
+                    Point1="66.5,0"
+                    Point2="70.5,0"
+                    Point3="70.5,-4" />
                   <mssgle:LineSegment
-                    End="71,-6" />
+                    End="70.5,-6" />
                   <mssgle:CubicBezierSegment
-                    Point1="71,-6"
-                    Point2="71,-10"
-                    Point3="75,-10" />
+                    Point1="70.5,-6"
+                    Point2="70.5,-10"
+                    Point3="74.5,-10" />
                   <mssgle:LineSegment
-                    End="134.5,-10" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos]"
-          TopLeft="493,70">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-317.5,82"
-              Start="0,0"
-              End="-317.5,74.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37"
-                    Point2="0,41"
-                    Point3="-4,41" />
-                  <mssgle:LineSegment
-                    End="-313.5,41" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-313.5,41"
-                    Point2="-317.5,41"
-                    Point3="-317.5,45" />
-                  <mssgle:LineSegment
-                    End="-317.5,74.5" />
+                    End="133.5,-10" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
