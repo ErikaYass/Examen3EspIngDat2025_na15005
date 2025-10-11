@@ -11,8 +11,8 @@
   DTS:LocaleID="22538"
   DTS:ObjectName="FactFlight"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{ACE8FCF9-183A-4744-B2C7-7D9840265830}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{7D7D437A-2D13-4DCC-AF6D-A03472D354A7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1094,67 +1094,33 @@ try_cast(SecurityDelay as float)&gt;0.00 or try_cast(LateAircraftDelay as float)
         <NodeLayout
           Size="185,42"
           Id="Package\Transferencia de Base Origen a FactFlight\Llenado en FactFlight"
-          TopLeft="459,178" />
-        <NodeLayout
-          Size="252,42"
-          Id="Package\Transferencia de Base Origen a FactFlight\Lectura de GamatronFlightDataCsv"
-          TopLeft="67,30" />
+          TopLeft="469,178" />
         <NodeLayout
           Size="259,42"
           Id="Package\Transferencia de Base Origen a FactFlight\Conversion DT_NTEXT a DT_WSTR"
-          TopLeft="394,36" />
+          TopLeft="404,36" />
         <NodeLayout
           Size="245,42"
           Id="Package\Transferencia de Base Origen a FactFlight\Conversión DT_WSTR a DT_STR"
-          TopLeft="69,150" />
+          TopLeft="79,150" />
+        <NodeLayout
+          Size="252,42"
+          Id="Package\Transferencia de Base Origen a FactFlight\Lectura de GamatronFlightDataCsv"
+          TopLeft="26,29" />
         <EdgeLayout
           Id="Package\Transferencia de Base Origen a FactFlight.Paths[Salida de origen de ADO NET]"
-          TopLeft="246,54">
+          TopLeft="278,53.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="148,0"
+              EndConnector="126,0"
               Start="0,0"
-              End="140.5,0">
+              End="118.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="140.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Transferencia de Base Origen a FactFlight.Paths[Salida de conversión de datos]"
-          TopLeft="523.5,78">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-332,72"
-              Start="0,0"
-              End="-332,64.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32"
-                    Point2="0,36"
-                    Point3="-4,36" />
-                  <mssgle:LineSegment
-                    End="-328,36" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-328,36"
-                    Point2="-332,36"
-                    Point3="-332,40" />
-                  <mssgle:LineSegment
-                    End="-332,64.5" />
+                    End="118.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1165,7 +1131,7 @@ try_cast(SecurityDelay as float)&gt;0.00 or try_cast(LateAircraftDelay as float)
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Transferencia de Base Origen a FactFlight.Paths[Salida de conversión de datos1]"
-          TopLeft="314,171">
+          TopLeft="324,171">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1189,6 +1155,40 @@ try_cast(SecurityDelay as float)&gt;0.00 or try_cast(LateAircraftDelay as float)
                     Point3="76.5,28" />
                   <mssgle:LineSegment
                     End="137.5,28" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Transferencia de Base Origen a FactFlight.Paths[Salida de conversión de datos]"
+          TopLeft="533.5,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-332,72"
+              Start="0,0"
+              End="-332,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32"
+                    Point2="0,36"
+                    Point3="-4,36" />
+                  <mssgle:LineSegment
+                    End="-328,36" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-328,36"
+                    Point2="-332,36"
+                    Point3="-332,40" />
+                  <mssgle:LineSegment
+                    End="-332,64.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
