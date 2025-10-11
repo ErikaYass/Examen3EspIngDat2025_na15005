@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="10/7/2025 8:58:18 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="22538"
   DTS:ObjectName="Llenado Base Origen"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{DCF755A4-F333-4657-885D-AB1A8A4AE955}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{501A5111-236E-46F4-89E6-593A93F5E64E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Vuelos 2018]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{5F6762B6-2715-42D4-961C-3C1ABD5F31FF}"
+      DTS:DTSID="{91F9CAFF-394D-4B1D-9D0A-0B2A425DE888}"
       DTS:ObjectName="Vuelos 2018">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -39,8 +39,8 @@
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\Admin\Desktop\csv limpios\Flights_2018.csv">
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Admin\Desktop\csv limpios\Combined_Flights_2018.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +49,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FlightDate"
-              DTS:DTSID="{E75BE884-092E-45D1-B788-6050492939DA}"
+              DTS:DTSID="{5C1CF995-D1E8-4A08-87CF-AE38AFE11A74}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +58,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Airline"
-              DTS:DTSID="{FB6506D7-6C2D-40D2-AB7E-7648D8B87DCF}"
+              DTS:DTSID="{4FA2E71A-6E5C-42A5-8A16-DE84B4AD9996}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +67,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Origin"
-              DTS:DTSID="{5F29C9DC-3A05-4376-A7D1-B4A44E8938AD}"
+              DTS:DTSID="{47600B99-75D5-452A-8FCA-4E691851AFD1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,7 +76,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Dest"
-              DTS:DTSID="{37D1B723-4C2C-41C0-80B2-4539ED061986}"
+              DTS:DTSID="{D37507A4-B3B3-463E-B930-FD3064AF7B31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,7 +85,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Cancelled"
-              DTS:DTSID="{625325A6-D4BD-41FC-AB67-A3DE994A614B}"
+              DTS:DTSID="{3BED6571-C303-46EB-BC12-A404BED74848}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Diverted"
-              DTS:DTSID="{E51157F7-BBF0-480C-9B74-249E33A3412B}"
+              DTS:DTSID="{00825C38-6B93-40BB-A6B7-7650ABA56BF8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CRSDepTime"
-              DTS:DTSID="{652B61A1-1FF4-4EFA-ABCB-E48A24A958F3}"
+              DTS:DTSID="{6FAF37A4-B3D9-4480-9870-22E1E301256A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +112,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DepTime"
-              DTS:DTSID="{E1E16290-3332-4807-BF3C-3BDEEE29100F}"
+              DTS:DTSID="{5BC83593-7A10-49C2-A30B-4A1CF54B0532}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +121,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DepDelayMinutes"
-              DTS:DTSID="{FF90E318-8671-474B-9C99-5F2C778DB5D7}"
+              DTS:DTSID="{D0F06470-1DE1-4B29-98E9-13C57E5B5E2E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +130,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DepDelay"
-              DTS:DTSID="{80AAD275-F87D-47C9-87CF-07A85B28D07F}"
+              DTS:DTSID="{DB6A5C57-DFC9-4A4D-B5FB-030DFDF9873B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,7 +139,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ArrTime"
-              DTS:DTSID="{4EF18F73-4B18-4E87-8DE2-DBB3E1219321}"
+              DTS:DTSID="{883D36AC-92B3-4246-9E7B-586502E6A470}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,7 +148,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ArrDelayMinutes"
-              DTS:DTSID="{048EC442-FDF0-40D4-A35B-DD5D2BF41D10}"
+              DTS:DTSID="{A0841ABB-0C16-4106-8AE7-4F92CA96B16B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +157,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="AirTime"
-              DTS:DTSID="{A06B2D56-4C3E-4C79-AC22-FDF5479A6C47}"
+              DTS:DTSID="{6DC831CE-68D5-465A-A1E4-4951395A2CA2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +166,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CRSElapsedTime"
-              DTS:DTSID="{0583E33C-046B-43A2-BDAF-0C51BCFDBB46}"
+              DTS:DTSID="{D7B5A220-5FDA-4E84-9646-815543997C18}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -175,7 +175,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ActualElapsedTime"
-              DTS:DTSID="{C00B7DAF-0502-4986-887D-CCFAF0BA4DD0}"
+              DTS:DTSID="{20C87DB8-FEFC-4B80-B9C3-0CBB24B8924B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -184,7 +184,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Distance"
-              DTS:DTSID="{A5156BFD-F509-41B6-8481-AA535F94AFA3}"
+              DTS:DTSID="{2A66E2B3-8BDD-4826-8012-51DA14822B81}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -193,7 +193,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Year"
-              DTS:DTSID="{EC662A91-5EEE-47D1-9E4A-535E6D5CAB32}"
+              DTS:DTSID="{C049285E-472A-49C2-A62F-4309EB61F243}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +202,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Quarter"
-              DTS:DTSID="{30E29BC1-3A6C-4B08-833A-5E549A722AC9}"
+              DTS:DTSID="{E2F9BF0B-5EF5-4801-9ECB-E1A954EDC4AB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -211,7 +211,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Month"
-              DTS:DTSID="{E4E6D52E-5911-4418-AAFB-E60BF3AB022D}"
+              DTS:DTSID="{5CAF9497-3A14-4558-9CC3-0B912C8ACE7D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -220,7 +220,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DayofMonth"
-              DTS:DTSID="{09F62864-78FD-4B00-89F7-D9B4ED99D129}"
+              DTS:DTSID="{E6ECBDAB-2C50-4897-B6B0-B5EEA79794A6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -229,7 +229,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DayOfWeek"
-              DTS:DTSID="{2C8F442F-D547-4647-A333-FC0E677E3D61}"
+              DTS:DTSID="{CB90A0C1-8C40-4E3D-8AE7-84163979E9CA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -238,7 +238,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Marketing_Airline_Network"
-              DTS:DTSID="{55A48CB7-8F3B-4519-8ECE-E26EDA57D324}"
+              DTS:DTSID="{13443FFC-1CDD-4D30-BA6E-3D3F00987207}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -247,7 +247,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Operated_or_Branded_Code_Share_Partners"
-              DTS:DTSID="{12C10B34-6CC8-41C3-9DD1-CA49ABE6241C}"
+              DTS:DTSID="{A4F6548B-EB74-4EFA-BB87-66CC56FBA7C3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -256,7 +256,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DOT_ID_Marketing_Airline"
-              DTS:DTSID="{B6760BC0-5055-4D09-83B7-FA7F14C50F35}"
+              DTS:DTSID="{B45F336D-9534-4575-A9A1-C7BAEA92C7D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -265,7 +265,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="IATA_Code_Marketing_Airline"
-              DTS:DTSID="{D14FAFCC-23B3-4C51-97EE-8155EDF93F4B}"
+              DTS:DTSID="{3C251969-2BD4-46E0-B39C-0FE9482786FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -274,7 +274,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Flight_Number_Marketing_Airline"
-              DTS:DTSID="{E5F996EE-D003-4CE5-A423-FF3CE5D7797C}"
+              DTS:DTSID="{B152489B-F2BC-4B5F-9415-CB8E3BDD7E24}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -283,7 +283,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Operating_Airline"
-              DTS:DTSID="{F9C3BEE1-29AC-424A-8ED6-C4667EEA30E9}"
+              DTS:DTSID="{34D14DE3-CDE4-4021-AAD6-BC5C41AF39AE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -292,7 +292,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DOT_ID_Operating_Airline"
-              DTS:DTSID="{73A33913-BEAD-418D-89FF-5A374829418B}"
+              DTS:DTSID="{7C48DADD-9990-410F-B165-96540D572B33}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -301,7 +301,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="IATA_Code_Operating_Airline"
-              DTS:DTSID="{5082B889-25A9-4E0F-A727-BF2E6B0FF4E3}"
+              DTS:DTSID="{5CCD45F0-B204-4812-8503-181B959844A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -310,7 +310,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tail_Number"
-              DTS:DTSID="{6948DA7E-102B-4C05-ACAA-5ABFE2ACFAAB}"
+              DTS:DTSID="{8A1B64EC-02E4-4AFB-AFD5-6CBB5BE4A825}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -319,7 +319,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Flight_Number_Operating_Airline"
-              DTS:DTSID="{67E9E9C6-75DE-4B49-9059-07922A615832}"
+              DTS:DTSID="{83663609-F749-47B7-B4EE-0195C965AA18}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -328,7 +328,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OriginAirportID"
-              DTS:DTSID="{A2E033D7-997E-4638-908A-14F444CC77A4}"
+              DTS:DTSID="{66B144EA-4D37-4207-98BF-0B00686D9830}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -337,7 +337,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OriginAirportSeqID"
-              DTS:DTSID="{7156AD5F-4EB0-4720-8298-193186F1AFFF}"
+              DTS:DTSID="{81417926-0604-45B5-B5E3-56789662D63E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -346,7 +346,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OriginCityMarketID"
-              DTS:DTSID="{D1032030-8933-4E4B-AF21-D0D3F0E6F916}"
+              DTS:DTSID="{32261B84-1FF4-4CF1-8475-5A5614E383CD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -355,7 +355,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OriginCityName"
-              DTS:DTSID="{D5113DDC-8043-40E9-8E86-08D276F33C69}"
+              DTS:DTSID="{906FEED8-021B-4C79-8329-C59586977B21}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -364,7 +364,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OriginState"
-              DTS:DTSID="{983B66CE-6635-44B7-8E76-744606F9FEDE}"
+              DTS:DTSID="{1269D504-B672-4EC7-BC29-EC82CDB28534}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -373,7 +373,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OriginStateFips"
-              DTS:DTSID="{2671E1C9-7C42-412E-97A9-6144D9D8469C}"
+              DTS:DTSID="{604BCEA8-F088-4835-8B77-32B7D9B42F8C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -382,7 +382,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OriginStateName"
-              DTS:DTSID="{C60741FD-8B97-495E-8AC1-BD30B4135355}"
+              DTS:DTSID="{DDE3A0D8-ECDE-41CF-9931-DE6B025AE4CB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -391,7 +391,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OriginWac"
-              DTS:DTSID="{34A2B0F2-7F05-4E69-BC97-96F65BF55811}"
+              DTS:DTSID="{ABE61BF8-636D-4E4D-A602-88AF701FAABC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -400,7 +400,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DestAirportID"
-              DTS:DTSID="{AADA97C4-D555-4E2B-8354-1734626322CD}"
+              DTS:DTSID="{9D158F79-0812-4E9E-B09E-4151D3C4266C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -409,7 +409,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DestAirportSeqID"
-              DTS:DTSID="{81CCC097-6B9F-451E-948B-3CB89EFB7AA5}"
+              DTS:DTSID="{893AA699-C2BC-4080-89A7-3C86DC3C6505}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -418,7 +418,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DestCityMarketID"
-              DTS:DTSID="{D47FB863-E3FD-44BC-AA1D-4A2103D1AA7A}"
+              DTS:DTSID="{F9CDE792-7017-46E9-909C-5CEF4D6AC769}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -427,7 +427,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DestCityName"
-              DTS:DTSID="{286888AF-2D9A-49BE-B45C-81DA1F1CD54A}"
+              DTS:DTSID="{71D36832-4D8F-4A99-B655-087AD3DBC36B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -436,7 +436,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DestState"
-              DTS:DTSID="{B7E5569C-4EC5-4D02-BABF-000EDE227960}"
+              DTS:DTSID="{C14E271C-B7EE-41F3-9912-385DAFC2B3CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -445,7 +445,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DestStateFips"
-              DTS:DTSID="{A40021FB-22D7-4163-8B65-F39B94AC3426}"
+              DTS:DTSID="{07E44F04-92E3-4D5A-B357-879CD7A54072}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -454,7 +454,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DestStateName"
-              DTS:DTSID="{B49EC07F-8D86-406E-845C-1605C743A0AC}"
+              DTS:DTSID="{BBFBC4DE-1A03-4969-96E9-8C7E01510099}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -463,7 +463,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DestWac"
-              DTS:DTSID="{0DB50B81-F815-4160-AFD2-99D2550420DA}"
+              DTS:DTSID="{4FC17CEB-CDED-4F79-9E23-C589BA3CF028}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -472,7 +472,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DepDel15"
-              DTS:DTSID="{D1504B65-CBDC-485C-8E8B-1CE3CA4F20B9}"
+              DTS:DTSID="{E1360A00-78A9-47C1-8203-089A92CFDE0C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -481,7 +481,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DepartureDelayGroups"
-              DTS:DTSID="{E44D13E6-0553-4F15-B4C0-8F368238EE37}"
+              DTS:DTSID="{2F917A26-EDB5-4BBC-B9BD-8A3268D8A3F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -490,7 +490,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DepTimeBlk"
-              DTS:DTSID="{DAA9392A-17DE-4496-855E-441F8D3932F8}"
+              DTS:DTSID="{49E8EA1E-C3E1-40D3-8625-B62C20E3A8ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -499,7 +499,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TaxiOut"
-              DTS:DTSID="{35DB8CB4-5AB3-46CD-B3BE-5A00D2E85619}"
+              DTS:DTSID="{48462AEA-9197-453E-ACC8-A9645DCFB312}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -508,7 +508,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="WheelsOff"
-              DTS:DTSID="{798E5BE6-8711-47BC-8651-9D2D90C8B46E}"
+              DTS:DTSID="{52926089-0ECB-4330-9A67-8E001E33716E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -517,7 +517,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="WheelsOn"
-              DTS:DTSID="{B1391F0C-1E6C-4355-96E2-1EE0CA6C494E}"
+              DTS:DTSID="{0D0A017C-0D91-4E77-8DBD-01E2527B4F1E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -526,7 +526,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TaxiIn"
-              DTS:DTSID="{4AE196F2-79C2-4CEC-94DD-53C153D30EBF}"
+              DTS:DTSID="{B9C9840B-6EF1-4037-B25A-1E49F0E005CD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -535,7 +535,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CRSArrTime"
-              DTS:DTSID="{E37AA39D-D24E-465B-AF1A-957335C76AE8}"
+              DTS:DTSID="{8E99415F-EB24-4C31-A8B4-2EC6F9CAF6A4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -544,7 +544,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ArrDelay"
-              DTS:DTSID="{7F5B00C0-17A9-4589-A978-54C82B4687DF}"
+              DTS:DTSID="{771F66B0-98A6-43FB-AE90-66A920DAB1DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -553,7 +553,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ArrDel15"
-              DTS:DTSID="{67504AD4-FD9A-45BA-A982-E242B94CFB81}"
+              DTS:DTSID="{6C5ED7AF-2CFC-4655-A143-B629BE2D434C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -562,7 +562,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ArrivalDelayGroups"
-              DTS:DTSID="{A8FF62A7-5615-478D-AD51-E9ECA6A8889E}"
+              DTS:DTSID="{A4A94FB5-C49B-4F8F-A42C-CA3182AE4C78}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -571,7 +571,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ArrTimeBlk"
-              DTS:DTSID="{43B58942-F0BF-4BD3-91F3-D4F5E771A68D}"
+              DTS:DTSID="{81D38063-98C0-45B1-9741-38906146E070}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -580,16 +580,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DistanceGroup"
-              DTS:DTSID="{5CD2BBD7-A253-4362-96BF-8CA0C64CD1DD}"
+              DTS:DTSID="{55B3AA1B-C2B7-47BD-B4CB-6077F9BA294A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:ColumnDelimiter="_x000A_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DivAirportLandings"
-              DTS:DTSID="{58064EAC-20A9-4CBF-AED2-5316221CA151}"
+              DTS:DTSID="{34D36161-FB33-4594-81A1-B37BA2E774D0}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -663,7 +663,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[FlightDate]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="FlightDate"
@@ -671,7 +671,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FlightDate]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Origin]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Origin"
@@ -679,7 +679,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Origin]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Dest]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Dest"
@@ -687,7 +687,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Dest]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Cancelled]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Cancelled"
@@ -695,7 +695,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Cancelled]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Diverted]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Diverted"
@@ -703,7 +703,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Diverted]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[CRSDepTime]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CRSDepTime"
@@ -711,7 +711,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSDepTime]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DepTime]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DepTime"
@@ -719,7 +719,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepTime]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DepDelayMinutes]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DepDelayMinutes"
@@ -727,7 +727,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDelayMinutes]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DepDelay]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DepDelay"
@@ -735,7 +735,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDelay]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[ArrTime]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ArrTime"
@@ -743,7 +743,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrTime]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[ArrDelayMinutes]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ArrDelayMinutes"
@@ -751,7 +751,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDelayMinutes]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[AirTime]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="AirTime"
@@ -759,7 +759,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[AirTime]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[CRSElapsedTime]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CRSElapsedTime"
@@ -767,7 +767,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSElapsedTime]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[ActualElapsedTime]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ActualElapsedTime"
@@ -775,7 +775,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ActualElapsedTime]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Distance]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Distance"
@@ -783,7 +783,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Distance]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Year]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Year"
@@ -791,7 +791,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Year]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Quarter]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Quarter"
@@ -799,7 +799,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Quarter]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Month]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Month"
@@ -807,7 +807,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Month]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DayofMonth]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DayofMonth"
@@ -815,7 +815,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DayofMonth]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DayOfWeek]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DayOfWeek"
@@ -823,7 +823,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DayOfWeek]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Marketing_Airline_Network]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Marketing_Airline_Network"
@@ -831,7 +831,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Marketing_Airline_Network]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Operated_or_Branded_Code_Share_Partners]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Operated_or_Branded_Code_Share_Partners"
@@ -839,7 +839,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operated_or_Branded_Code_Share_Partners]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DOT_ID_Marketing_Airline]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DOT_ID_Marketing_Airline"
@@ -847,7 +847,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DOT_ID_Marketing_Airline]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[IATA_Code_Marketing_Airline]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="IATA_Code_Marketing_Airline"
@@ -855,7 +855,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Marketing_Airline]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Flight_Number_Marketing_Airline]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Flight_Number_Marketing_Airline"
@@ -863,7 +863,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Flight_Number_Marketing_Airline]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Operating_Airline]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Operating_Airline"
@@ -871,7 +871,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operating_Airline]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DOT_ID_Operating_Airline]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DOT_ID_Operating_Airline"
@@ -879,7 +879,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DOT_ID_Operating_Airline]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[IATA_Code_Operating_Airline]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="IATA_Code_Operating_Airline"
@@ -887,7 +887,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Operating_Airline]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Tail_Number]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Tail_Number"
@@ -895,7 +895,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Tail_Number]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Flight_Number_Operating_Airline]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Flight_Number_Operating_Airline"
@@ -903,7 +903,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Flight_Number_Operating_Airline]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[OriginAirportID]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OriginAirportID"
@@ -911,7 +911,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginAirportID]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[OriginAirportSeqID]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OriginAirportSeqID"
@@ -919,7 +919,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginAirportSeqID]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[OriginCityMarketID]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OriginCityMarketID"
@@ -927,7 +927,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginCityMarketID]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[OriginCityName]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OriginCityName"
@@ -935,7 +935,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginCityName]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[OriginStateFips]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OriginStateFips"
@@ -943,7 +943,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginStateFips]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[OriginStateName]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OriginStateName"
@@ -951,7 +951,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginStateName]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[OriginWac]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OriginWac"
@@ -959,7 +959,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginWac]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DestAirportID]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DestAirportID"
@@ -967,7 +967,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestAirportID]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DestAirportSeqID]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DestAirportSeqID"
@@ -975,7 +975,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestAirportSeqID]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DestCityMarketID]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DestCityMarketID"
@@ -983,7 +983,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestCityMarketID]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DestCityName]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DestCityName"
@@ -991,7 +991,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestCityName]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DestState]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DestState"
@@ -999,7 +999,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestState]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DestStateFips]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DestStateFips"
@@ -1007,7 +1007,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestStateFips]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DestStateName]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DestStateName"
@@ -1015,7 +1015,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestStateName]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DestWac]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DestWac"
@@ -1023,7 +1023,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestWac]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DepDel15]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DepDel15"
@@ -1031,7 +1031,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDel15]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DepartureDelayGroups]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DepartureDelayGroups"
@@ -1039,7 +1039,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepartureDelayGroups]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DepTimeBlk]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DepTimeBlk"
@@ -1047,7 +1047,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepTimeBlk]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[TaxiOut]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="TaxiOut"
@@ -1055,7 +1055,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[TaxiOut]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[WheelsOff]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="WheelsOff"
@@ -1063,7 +1063,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[WheelsOff]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[WheelsOn]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="WheelsOn"
@@ -1071,7 +1071,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[WheelsOn]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[TaxiIn]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="TaxiIn"
@@ -1079,7 +1079,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[TaxiIn]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[CRSArrTime]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CRSArrTime"
@@ -1087,7 +1087,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSArrTime]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[ArrDelay]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ArrDelay"
@@ -1095,7 +1095,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDelay]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[ArrDel15]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ArrDel15"
@@ -1103,7 +1103,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDel15]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[ArrivalDelayGroups]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ArrivalDelayGroups"
@@ -1111,7 +1111,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrivalDelayGroups]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[ArrTimeBlk]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ArrTimeBlk"
@@ -1119,7 +1119,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrTimeBlk]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DistanceGroup]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DistanceGroup"
@@ -1127,7 +1127,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DistanceGroup]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[DivAirportLandings]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="DivAirportLandings"
@@ -1135,7 +1135,7 @@
                       lineageId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DivAirportLandings]" />
                     <inputColumn
                       refId="Package\Llenado Base Origen\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[OriginState]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OriginState"
@@ -1810,7 +1810,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FlightDate]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -1832,7 +1832,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -1854,7 +1854,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Origin]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -1876,7 +1876,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Dest]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -1898,7 +1898,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Cancelled]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -1920,7 +1920,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Diverted]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -1942,7 +1942,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSDepTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -1964,7 +1964,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -1986,7 +1986,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDelayMinutes]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2008,7 +2008,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDelay]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2030,7 +2030,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2052,7 +2052,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDelayMinutes]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2074,7 +2074,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[AirTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2096,7 +2096,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSElapsedTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2118,7 +2118,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ActualElapsedTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2140,7 +2140,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Distance]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2162,7 +2162,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Year]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2184,7 +2184,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Quarter]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2206,7 +2206,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Month]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2228,7 +2228,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DayofMonth]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2250,7 +2250,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DayOfWeek]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2272,7 +2272,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Marketing_Airline_Network]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2294,7 +2294,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operated_or_Branded_Code_Share_Partners]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2316,7 +2316,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DOT_ID_Marketing_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2338,7 +2338,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Marketing_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2360,7 +2360,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Flight_Number_Marketing_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2382,7 +2382,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operating_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2404,7 +2404,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DOT_ID_Operating_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2426,7 +2426,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Operating_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2448,7 +2448,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Tail_Number]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2470,7 +2470,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Flight_Number_Operating_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2492,7 +2492,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginAirportID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2514,7 +2514,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginAirportSeqID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2536,7 +2536,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginCityMarketID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2558,7 +2558,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginCityName]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2580,7 +2580,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestCityName]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2602,7 +2602,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestState]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2624,7 +2624,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestStateFips]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2646,7 +2646,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestStateName]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2668,7 +2668,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestWac]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2690,7 +2690,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDel15]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2712,7 +2712,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepartureDelayGroups]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2734,7 +2734,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginState]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2756,7 +2756,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginStateFips]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2778,7 +2778,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginStateName]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2800,7 +2800,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestAirportID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2822,7 +2822,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginWac]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2844,7 +2844,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestAirportSeqID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2866,7 +2866,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestCityMarketID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2888,7 +2888,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepTimeBlk]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2910,7 +2910,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[TaxiOut]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2932,7 +2932,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[WheelsOn]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2954,7 +2954,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[WheelsOff]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2976,7 +2976,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[TaxiIn]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -2998,7 +2998,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSArrTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -3020,7 +3020,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDelay]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -3042,7 +3042,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDel15]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -3064,7 +3064,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrivalDelayGroups]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -3086,7 +3086,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrTimeBlk]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -3108,7 +3108,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DistanceGroup]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -3130,7 +3130,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DivAirportLandings]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
@@ -3155,367 +3155,367 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[FlightDate]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="FlightDate" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Airline" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Origin]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Origin" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Dest]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Dest" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Cancelled]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Cancelled" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Diverted]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Diverted" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CRSDepTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="CRSDepTime" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DepTime" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepDelayMinutes]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DepDelayMinutes" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepDelay]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DepDelay" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="ArrTime" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrDelayMinutes]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="ArrDelayMinutes" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[AirTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="AirTime" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CRSElapsedTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="CRSElapsedTime" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ActualElapsedTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="ActualElapsedTime" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Distance]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Distance" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Year]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Quarter]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Quarter" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Month]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Month" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DayofMonth]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DayofMonth" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DayOfWeek]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DayOfWeek" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Marketing_Airline_Network]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Marketing_Airline_Network" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Operated_or_Branded_Code_Share_Partners]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Operated_or_Branded_Code_Share_Partners" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DOT_ID_Marketing_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DOT_ID_Marketing_Airline" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IATA_Code_Marketing_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="IATA_Code_Marketing_Airline" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Flight_Number_Marketing_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Flight_Number_Marketing_Airline" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Operating_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Operating_Airline" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DOT_ID_Operating_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DOT_ID_Operating_Airline" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IATA_Code_Operating_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="IATA_Code_Operating_Airline" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Tail_Number]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Tail_Number" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Flight_Number_Operating_Airline]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Flight_Number_Operating_Airline" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginAirportID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="OriginAirportID" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginAirportSeqID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="OriginAirportSeqID" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginCityMarketID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="OriginCityMarketID" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginCityName]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="OriginCityName" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginState]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="OriginState" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginStateFips]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="OriginStateFips" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginStateName]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="OriginStateName" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginWac]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="OriginWac" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestAirportID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DestAirportID" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestAirportSeqID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DestAirportSeqID" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestCityMarketID]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DestCityMarketID" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestCityName]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DestCityName" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestState]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DestState" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestStateFips]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DestStateFips" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestStateName]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DestStateName" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestWac]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DestWac" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepDel15]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DepDel15" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepartureDelayGroups]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DepartureDelayGroups" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepTimeBlk]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DepTimeBlk" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[TaxiOut]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="TaxiOut" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[WheelsOff]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="WheelsOff" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[WheelsOn]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="WheelsOn" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[TaxiIn]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="TaxiIn" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CRSArrTime]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="CRSArrTime" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrDelay]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="ArrDelay" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrDel15]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="ArrDel15" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrivalDelayGroups]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="ArrivalDelayGroups" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrTimeBlk]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="ArrTimeBlk" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DistanceGroup]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DistanceGroup" />
                     <externalMetadataColumn
                       refId="Package\Llenado Base Origen\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DivAirportLandings]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="DivAirportLandings" />
@@ -3577,7 +3577,7 @@
         <NodeLayout
           Size="182,42"
           Id="Package\Llenado Base Origen"
-          TopLeft="147,94" />
+          TopLeft="241,116" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

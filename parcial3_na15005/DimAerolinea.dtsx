@@ -11,8 +11,8 @@
   DTS:LocaleID="22538"
   DTS:ObjectName="DimAerolinea"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{693C4FBC-CD17-4AE5-A72A-4BA403C6E5D6}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{E38D221A-91CD-42D6-9E46-A2DCD151AFE1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -85,13 +85,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:refId="Package\Llenado DimAerolinea"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
       DTS:DTSID="{0D7D76D4-7845-4792-98C0-A6BC6633786D}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:ObjectName="Llenado DimAerolinea"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -99,11 +99,11 @@
           version="1">
           <components>
             <component
-              refId="Package\Tarea Flujo de datos\Destino de ADO NET"
+              refId="Package\Llenado DimAerolinea\Destino DimAerolinea"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
-              name="Destino de ADO NET"
+              name="Destino DimAerolinea"
               usesDispositions="true"
               version="2">
               <properties>
@@ -134,7 +134,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Connections[IDbConnection]"
+                  refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Connections[IDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.GAMATRONDW]"
                   connectionManagerRefId="Package.ConnectionManagers[(localdb)\MSSQLLocalDB.GAMATRONDW]"
                   description="Administrador de conexiones administrado"
@@ -142,41 +142,41 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Code]"
+                      refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET].Columns[Code]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Code"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[AerolineaID]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Code]" />
+                      externalMetadataColumnId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET].ExternalColumns[AerolineaID]"
+                      lineageId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].Columns[Code]" />
                     <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Description]"
+                      refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET].Columns[Description]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Description"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[NombreAerolinea]"
-                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Description]" />
+                      externalMetadataColumnId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET].ExternalColumns[NombreAerolinea]"
+                      lineageId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].Columns[Description]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[AerolineaKey]"
+                      refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET].ExternalColumns[AerolineaKey]"
                       dataType="i4"
                       name="AerolineaKey" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[AerolineaID]"
+                      refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET].ExternalColumns[AerolineaID]"
                       dataType="wstr"
                       length="50"
                       name="AerolineaID" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[NombreAerolinea]"
+                      refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET].ExternalColumns[NombreAerolinea]"
                       dataType="wstr"
                       length="100"
                       name="NombreAerolinea" />
@@ -185,22 +185,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Llenado DimAerolinea\Destino DimAerolinea.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Llenado DimAerolinea\Destino DimAerolinea.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Llenado DimAerolinea\Destino DimAerolinea.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -209,12 +209,12 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarea Flujo de datos\Origen de archivo plano"
+              refId="Package\Llenado DimAerolinea\Origen de Data en csv"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
               description="Origen de archivo plano"
               localeId="22538"
-              name="Origen de archivo plano"
+              name="Origen de Data en csv"
               usesDispositions="true"
               version="1">
               <properties>
@@ -229,25 +229,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarea Flujo de datos\Origen de archivo plano.Connections[FlatFileConnection]"
+                  refId="Package\Llenado DimAerolinea\Origen de Data en csv.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[LlenadoDimAerolinea]"
                   connectionManagerRefId="Package.ConnectionManagers[LlenadoDimAerolinea]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
+                  refId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano]"
                   name="Salida de origen de archivo plano">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Code]"
+                      refId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].Columns[Code]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Code]"
+                      externalMetadataColumnId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Code]"
                       length="50"
-                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Code]"
+                      lineageId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].Columns[Code]"
                       name="Code"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -262,14 +262,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Description]"
+                      refId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].Columns[Description]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Description]"
+                      externalMetadataColumnId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Description]"
                       length="50"
-                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Description]"
+                      lineageId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].Columns[Description]"
                       name="Description"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -287,13 +287,13 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Code]"
+                      refId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Code]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Code" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Description]"
+                      refId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Description]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -301,27 +301,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                  refId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de error de origen de archivo plano]"
                   isErrorOut="true"
                   name="Salida de error de origen de archivo plano">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      refId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                       codePage="1252"
                       dataType="text"
                       description="Columna de salida de error de origen de archivo plano"
-                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      lineageId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                       name="Columna de salida de error de origen de archivo plano" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      refId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      lineageId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      refId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      lineageId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -332,10 +332,10 @@
           </components>
           <paths>
             <path
-              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
-              endId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Llenado DimAerolinea.Paths[Salida de origen de archivo plano]"
+              endId="Package\Llenado DimAerolinea\Destino DimAerolinea.Inputs[Entrada de destino de ADO NET]"
               name="Salida de origen de archivo plano"
-              startId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
+              startId="Package\Llenado DimAerolinea\Origen de Data en csv.Outputs[Salida de origen de archivo plano]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -349,7 +349,7 @@
       DTS:From="Package\Limpiar DimAerolinea"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
-      DTS:To="Package\Tarea Flujo de datos" />
+      DTS:To="Package\Llenado DimAerolinea" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -368,8 +368,8 @@
           Id="Package\Limpiar DimAerolinea"
           TopLeft="126.5,109.5" />
         <NodeLayout
-          Size="180,42"
-          Id="Package\Tarea Flujo de datos"
+          Size="187,42"
+          Id="Package\Llenado DimAerolinea"
           TopLeft="404.5,115.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
@@ -397,32 +397,44 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Tarea Flujo de datos">
+    design-time-name="Package\Llenado DimAerolinea">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="196,42"
-          Id="Package\Tarea Flujo de datos\Origen de archivo plano"
-          TopLeft="106,39" />
+          Size="188,42"
+          Id="Package\Llenado DimAerolinea\Origen de Data en csv"
+          TopLeft="111,64" />
         <NodeLayout
-          Size="183,42"
-          Id="Package\Tarea Flujo de datos\Destino de ADO NET"
+          Size="185,42"
+          Id="Package\Llenado DimAerolinea\Destino DimAerolinea"
           TopLeft="439,46" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
-          TopLeft="302,63.5">
+          Id="Package\Llenado DimAerolinea.Paths[Salida de origen de archivo plano]"
+          TopLeft="299,85">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="137,0"
+              EndConnector="140,-18"
               Start="0,0"
-              End="129.5,0">
+              End="132.5,-18">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="129.5,0" />
+                    End="66,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="66,0"
+                    Point2="70,0"
+                    Point3="70,-4" />
+                  <mssgle:LineSegment
+                    End="70,-14" />
+                  <mssgle:CubicBezierSegment
+                    Point1="70,-14"
+                    Point2="70,-18"
+                    Point3="74,-18" />
+                  <mssgle:LineSegment
+                    End="132.5,-18" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -435,7 +447,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Destino de ADO NET">
+    design-time-name="Package\Llenado DimAerolinea\Destino DimAerolinea">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
